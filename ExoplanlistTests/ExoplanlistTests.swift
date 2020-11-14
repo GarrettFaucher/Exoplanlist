@@ -2,7 +2,7 @@
 //  ExoplanlistTests.swift
 //  ExoplanlistTests
 //
-//  Created by user183186 on 11/14/20.
+//  Created by Garrett on 11/14/20.
 //
 
 import XCTest
