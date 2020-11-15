@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Item {
+class Item: Equatable {
     var name: String
     var discoveryMethod: String
     var distance: Float?
@@ -49,5 +49,13 @@ class Item {
                       planetRadius: 0
             )
         }
+    }
+    
+    static func ==(lhs: Item, rhs: Item) -> Bool {
+        return lhs.name == rhs.name
+            && lhs.discoveryMethod == rhs.discoveryMethod
+            && lhs.distance == rhs.distance
+            && lhs.orbitalEccentricity == rhs.orbitalEccentricity
+            && lhs.planetRadius == rhs.planetRadius
     }
 }
