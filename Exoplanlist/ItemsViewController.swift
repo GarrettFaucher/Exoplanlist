@@ -20,6 +20,7 @@ class ItemsViewController: UITableViewController {
             tableView.insertRows(at: [indexPath], with: .automatic)
         }
     }
+    
     @IBAction func toggleEditingMode(_ sender: UIButton) {
         // If you are currently in editing mode...
         if isEditing {
@@ -68,6 +69,13 @@ class ItemsViewController: UITableViewController {
             // Also remove that row from the table view with an animation
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
+    }
+    
+    override func tableView(_ tableView: UITableView,
+                            moveRowAt sourceIndexPath: IndexPath,
+                            to destinationIndexPath: IndexPath) {
+        // Update the model
+        itemStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
     }
     
 }
