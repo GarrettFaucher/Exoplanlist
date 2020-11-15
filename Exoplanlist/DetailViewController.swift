@@ -38,7 +38,7 @@ class DetailViewController: UIViewController {
         discoveryMethodField.text = item.discoveryMethod
         distanceField.text =
             numberFormatter.string(from: NSNumber(value: item.distance!))
-        dateDiscovered.text = "\(item.planetRadius!)"
+        dateDiscovered.text = "\(item.dateDiscovered!)"
     }
 
 }

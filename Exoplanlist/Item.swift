@@ -11,15 +11,13 @@ class Item: Equatable {
     var name: String
     var discoveryMethod: String
     var distance: Float?
-    var orbitalEccentricity: Float?
-    var planetRadius: Float?
+    var dateDiscovered: Date?
     
-    init(name: String, discoveryMethod: String, distance: Float?, orbitalEccentricity: Float?, planetRadius: Float?) {
+    init(name: String, discoveryMethod: String, distance: Float?, dateDiscovered: Date?) {
         self.name = name
         self.discoveryMethod = discoveryMethod
         self.distance = distance
-        self.orbitalEccentricity = orbitalEccentricity
-        self.planetRadius = planetRadius
+        self.dateDiscovered = dateDiscovered
     }
     
     convenience init(random: Bool = false) {
@@ -34,19 +32,19 @@ class Item: Equatable {
             let randomMethod = methods.randomElement()!
             
             let randomName = "\(randomStarName) \(randomId)"
-            let randomValue = Float.random(in: 0..<100)
+            
+            let randomNum = Float.random(in: 0..<100)
+            let randomDate = Date(timeIntervalSince1970: Double(randomNum*1000000))
 
             self.init(name: randomName,
                       discoveryMethod: randomMethod,
-                      distance: randomValue,
-                      orbitalEccentricity: randomValue,
-                      planetRadius: randomValue)
+                      distance: randomNum,
+                      dateDiscovered: randomDate)
         } else {
             self.init(name: "",
                       discoveryMethod: "",
                       distance: 0,
-                      orbitalEccentricity: 0,
-                      planetRadius: 0
+                      dateDiscovered: Date(timeIntervalSinceNow: 0)
             )
         }
     }
@@ -55,7 +53,6 @@ class Item: Equatable {
         return lhs.name == rhs.name
             && lhs.discoveryMethod == rhs.discoveryMethod
             && lhs.distance == rhs.distance
-            && lhs.orbitalEccentricity == rhs.orbitalEccentricity
-            && lhs.planetRadius == rhs.planetRadius
+            && lhs.dateDiscovered == rhs.dateDiscovered
     }
 }
