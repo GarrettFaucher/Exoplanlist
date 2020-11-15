@@ -23,7 +23,6 @@
                                     <rect key="frame" x="8" y="15" width="195" height="30"/>
                                     <state key="normal" title="Edit"/>
                                     <connections>
-                                        <action selector="addNewItem:" destination="IOE-aS-bTf" eventType="touchUpInside" id="lJJ-SX-nKO"/>
                                         <action selector="toggleEditingMode:" destination="IOE-aS-bTf" eventType="touchUpInside" id="ubC-8t-utX"/>
                                     </connections>
                                 </button>
@@ -31,7 +30,7 @@
                                     <rect key="frame" x="211" y="15" width="195" height="30"/>
                                     <state key="normal" title="Add"/>
                                     <connections>
-                                        <action selector="addNewItem:" destination="IOE-aS-bTf" eventType="touchUpInside" id="f3G-mv-Emx"/>
+                                        <action selector="addNewItem:" destination="IOE-aS-bTf" eventType="touchUpInside" id="QJQ-qK-kSB"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -63,7 +62,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xza-eX-s98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1787" y="58"/>
+            <point key="canvasLocation" x="-2042" y="73"/>
         </scene>
     </scenes>
     <resources>
