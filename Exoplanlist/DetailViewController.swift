@@ -31,14 +31,14 @@ class DetailViewController: UIViewController {
         return formatter
     }()
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        
-//        nameField.text = item.name
-//        discoveryMethodField.text = item.discoveryMethod
-//        distanceField.text =
-//            numberFormatter.string(from: NSNumber(value: item.distance!))
-//        dateDiscovered.text = "\(item.planetRadius!)"
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        nameField.text = item.name
+        discoveryMethodField.text = item.discoveryMethod
+        distanceField.text =
+            numberFormatter.string(from: NSNumber(value: item.distance!))
+        dateDiscovered.text = "\(item.planetRadius!)"
+    }
 
 }

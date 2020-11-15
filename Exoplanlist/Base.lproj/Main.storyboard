@@ -85,7 +85,7 @@
                                     <outlet property="discoveryLabel" destination="jlm-I8-sQp" id="X8d-PG-Bi0"/>
                                     <outlet property="distanceLabel" destination="TRn-iG-bam" id="bWh-Id-ReW"/>
                                     <outlet property="nameLabel" destination="Uly-M5-vUr" id="7tx-Za-yiq"/>
-                                    <segue destination="Iip-wA-ewq" kind="show" id="moM-ZB-cH9"/>
+                                    <segue destination="Iip-wA-ewq" kind="show" identifier="showItem" id="moM-ZB-cH9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
