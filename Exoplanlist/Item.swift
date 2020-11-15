@@ -33,8 +33,8 @@ class Item: Equatable {
             
             let randomName = "\(randomStarName) \(randomId)"
             
-            let randomNum = Float.random(in: 0..<100)
-            let randomDate = Date(timeIntervalSince1970: Double(randomNum*1000000))
+            let randomNum = Float.random(in: 0..<15000)
+            let randomDate = Date(timeIntervalSince1970: Double(randomNum*100000))
 
             self.init(name: randomName,
                       discoveryMethod: randomMethod,
