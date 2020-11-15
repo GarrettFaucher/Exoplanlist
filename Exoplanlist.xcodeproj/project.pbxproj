@@ -15,6 +15,7 @@
 		A49234282560A36D0093EF84 /* ExoplanlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49234272560A36D0093EF84 /* ExoplanlistTests.swift */; };
 		A49234332560A36D0093EF84 /* ExoplanlistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49234322560A36D0093EF84 /* ExoplanlistUITests.swift */; };
 		A49234442560A9B30093EF84 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49234432560A9B30093EF84 /* ItemsViewController.swift */; };
+		A492344F2560AF470093EF84 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A492344E2560AF470093EF84 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A49234322560A36D0093EF84 /* ExoplanlistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExoplanlistUITests.swift; sourceTree = "<group>"; };
 		A49234342560A36D0093EF84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A49234432560A9B30093EF84 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		A492344E2560AF470093EF84 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				A492341E2560A36C0093EF84 /* Info.plist */,
 				A49234162560A36C0093EF84 /* Main.storyboard */,
 				A49234432560A9B30093EF84 /* ItemsViewController.swift */,
+				A492344E2560AF470093EF84 /* Item.swift */,
 			);
 			path = Exoplanlist;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A492344F2560AF470093EF84 /* Item.swift in Sources */,
 				A49234442560A9B30093EF84 /* ItemsViewController.swift in Sources */,
 				A49234112560A36C0093EF84 /* AppDelegate.swift in Sources */,
 				A49234132560A36C0093EF84 /* SceneDelegate.swift in Sources */,
