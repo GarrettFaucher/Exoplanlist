@@ -35,10 +35,6 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         return formatter
     }()
     
-    @IBAction func deleteItem(_ sender: UIBarButtonItem) {
-        
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
