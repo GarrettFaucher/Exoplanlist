@@ -40,5 +40,20 @@ class DetailViewController: UIViewController {
             numberFormatter.string(from: NSNumber(value: item.distance!))
         dateDiscovered.text = "\(item.dateDiscovered!)"
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // "Save" changes to item
+        item.name = nameField.text ?? ""
+        item.discoveryMethod = discoveryMethodField.text ?? ""
+        
+        if let distanceText = distanceField.text,
+            let value = numberFormatter.number(from: distanceText) {
+            item.distance = value.floatValue
+        } else {
+            item.distance = 0
+        }
+    }
 
 }
