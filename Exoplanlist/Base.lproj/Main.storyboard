@@ -171,7 +171,13 @@
                             <outletCollection property="gestureRecognizers" destination="wmo-KF-sUR" appends="YES" id="HVO-yu-ev1"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="GdK-Go-ozI"/>
+                    <navigationItem key="navigationItem" id="GdK-Go-ozI">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="trash" id="Z3I-Ai-D7s">
+                            <connections>
+                                <action selector="deleteItem:" destination="Iip-wA-ewq" id="YWD-cZ-Jfh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dateDiscovered" destination="8os-Jo-jXh" id="oNx-Q2-pvS"/>
                         <outlet property="discoveryMethodField" destination="YI8-wl-10S" id="NLz-3f-EcM"/>
